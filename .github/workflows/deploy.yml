@@ -1,6 +1,6 @@
 deploy-to-server:
     needs: build-and-push
-    runs-on: self-hosted  # <--- INI KUNCINYA (Dulu ubuntu-latest)
+    runs-on: self-hosted
     steps:
       - name: Update Kubernetes
         run: |
